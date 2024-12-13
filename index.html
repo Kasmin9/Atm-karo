@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>s
+<body>
+    
+    Username<input type="text"name=""id="un">
+    <br>
+    Password<input type="password"name=""id="pass">
+    <br>
+    Amount<input type="number"name=""id="num">
+    <br>
+    <button on click="formula()">Withdraw money</button>
+    <h1 id ="result1"></h1>
+    <h1 id="result2"></h1>
+    <script>
+        function formula()
+        {
+            up=documnet.getElementById("un").value
+            p=documnet.getElementById("pass").value
+            n=documnet.getElementById("num").value
+            
+            if(u=="admin"&&p=="admin") {
+                document.getElementById("result1") .innerHtml="Welcome User"
+                if (n>5000) {
+                    documnet.getElementById("result2").innerHtml="Thank you for using our atm"
+                }
+            } else {
+                document.getElementById("result1").innerHTML="Username or Password Incorrect(try)"
+            }
+        }
+    </script>
+    
+</body>
+</html>
